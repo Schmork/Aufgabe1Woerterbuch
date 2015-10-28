@@ -36,7 +36,7 @@ public interface Dictionary<K,V> {
      * Returns the value to which the key was previously associated,
      * or null if the key is not contained in the dictionary.
 	 * @param key key whose mapping is to be removed from the map.
-	 * @return the previous value associated with key, or null if there was no mapping for key. 
+	 * @return the previous value associated with key, or null if there was no mapping for key.
 	 */
 	V remove(K key);
 
@@ -45,4 +45,6 @@ public interface Dictionary<K,V> {
 	 * @return the number of elements in this dictionary.
 	 */
 	int size();
+
+	String toString();
 }

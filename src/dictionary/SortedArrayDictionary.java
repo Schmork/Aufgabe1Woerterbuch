@@ -1,7 +1,5 @@
 package dictionary;
 
-import java.util.Comparator;
-
 /**
  * Created by Stephan on 28.10.2015.
  */
