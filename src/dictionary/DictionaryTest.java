@@ -10,15 +10,15 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DictionaryTest {
-	
+
 	public static void main(String[] args) {
 		List<Dictionary<String, String>> dictList = Arrays.asList(
 				new SortedArrayDictionary<>(),
-				new HashDictionary<>(7),
-				new BinaryTreeDictionary<>(),
+				//new HashDictionary<>(7),
+				//new BinaryTreeDictionary<>(),
 				new MapDictionary<>(new HashMap<>())
 		);
-	
+
 		for (Dictionary<String, String> dict : dictList) {
 			System.out.println("teste " + dict.getClass());
 			System.out.println(dict.insert("gehen", "go") == null);
